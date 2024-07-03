@@ -36,15 +36,15 @@ img{
     margin:30px auto;
 }
 .about h1{
-    font-size: 30px;
+    font-size: 40px;
     line-height: 60px;
     text-align: center;
     background-color: gray;
 }
 .about p{
-    font-size: 20px;
+    font-size: 28px;
     line-height: 30px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: justify;
 }
 button{
@@ -63,25 +63,26 @@ button:hover{
     display: flex;
     flex-direction: row;
     gap: 40px;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
 }
 #goals h1{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 20px;
     background-color: gray;
 }
 #goals h2{
-    font-size: 20px;
+    font-size: 24px;
+    padding: 0 10px;
 }
 #goals ul li{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
 }
 #goals p{
     text-align: center;
-    font-size: 20px;  
+    font-size: 28px;  
 }
 
 .goals-items, .skills-items{
@@ -114,12 +115,12 @@ button:hover{
 }
 #contact{
     text-align: center;
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 #contact h2{
     background-color: gray;
-    font-size: 30px;
+    font-size: 40px;
 }
 .contact-info{
     margin-bottom: 20px;
@@ -127,7 +128,7 @@ button:hover{
 
 #links{
     text-align: center;
-    font-size:20px ;
+    font-size:28px ;
 }
 a {
     display: block;
@@ -140,7 +141,7 @@ a:hover {
 }
 #footer{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px 0;
     background-color: #f5f5f5;
 }
