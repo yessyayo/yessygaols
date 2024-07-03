@@ -1,5 +1,5 @@
+alert('My name is Ogunniranye Yesirat, welcome to my space');
 function updateTime() {
-    
     const now = new Date();
     
     
@@ -14,25 +14,15 @@ function updateTime() {
     const seconds = nigeriaTime.getSeconds().toString().padStart(2, '0');
     const timeString = `${hours}:${minutes}:${seconds}`;
 
-    
-    const day = nigeriaTime.getDate().toString().padStart(2, '0');
-    const month = (nigeriaTime.getMonth() + 1).toString().padStart(2, '0'); 
-    const year = nigeriaTime.getFullYear();
-    const dateString = `${day}/${month}/${year}`;
 
-    
-    const dateTimeString = `${dateString} ${timeString}`;
-
-    
-    document.querySelector('[data-testid="currentTimeUTC"]').textContent = dateTimeString;
+    document.querySelector('[data-testid="currentTimeUTC"]').textContent = timeString;
 }
 
 function updateDay() {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     
-    
+   
     const now = new Date();
-    
     
     const nigeriaOffset = 1; 
 
@@ -49,11 +39,10 @@ window.onload = function() {
     updateDay();
     setInterval(updateTime, 1000); 
 };
-
 function toggleReadMore() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("readMoreBtn");
+    let dots = document.getElementById("dots");
+    let moreText = document.getElementById("more");
+    let btnText = document.getElementById("readMoreBtn");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
