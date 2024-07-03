@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1440px;
+    font-family: "poppins", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+header h1{
+    font-size: 50px;
+}
+#abt, #goals,#contact, #datetime {
+    width: 80%;
+    margin:0 auto ;
+}
+#aboutme{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+img{
+    border-radius:50%;
+    margin:30px auto;
+}
+.about h1{
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    background-color: gray;
+}
+.about p{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+    text-align: justify;
+}
+button{
+    width: 30%;
+    font-size: 20px;
+    margin: 10px 200px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: gray;
+}
+button:hover{
+    background-color: bisque;
+    color: gray;
+}
+.list, .skills{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 80%;
+    margin: 20px auto;
+}
+#goals h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: gray;
+}
+#goals h2{
+    font-size: 20px;
+}
+#goals ul li{
+    font-size: 18px;
+    line-height: 20px;
+}
+#goals p{
+    text-align: center;
+    font-size: 20px;  
+}
+
+.goals-items, .skills-items{
+    width: 60%;
+    margin: 0 auto
+}
+.goals-items, .skills-items ul{
+    padding: 10px 30px;
+}
+.goals-items:nth-child(1){
+    background-color: bisque;
+}
+.goals-items:nth-child(2){
+    background-color: gray;
+}
+.goals-items:nth-child(3){
+    background-color: aqua;
+}
+.skills-items:nth-child(1){
+    background-color: bisque;
+}
+.skills-items:nth-child(2){
+    background-color: gray;
+}
+.skills-items:nth-child(3){
+    background-color: aqua;
+}
+.skills-items:nth-child(4){
+    background-color: #83bef8;
+}
+#contact{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#contact h2{
+    background-color: gray;
+    font-size: 30px;
+}
+.contact-info{
+    margin-bottom: 20px;
+}
+
+#links{
+    text-align: center;
+    font-size:20px ;
+}
+a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #0066cc;
+}
+a:hover {
+    text-decoration: underline;
+}
+#footer{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+}
+
+
+
+/*media query for tablet(768px)*/
+@media (max-width: 768px) {
+    .container{
+        width: 768px;
+        font-family: "poppins", sans-serif;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    header{
+       max-width: 100%;
+    }
+    
+    #abt, #goals,#contact, #datetime {
+        width: 80%;
+        margin:0 auto ;
+    }
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .list{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    #goals h1{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        background-color: gray;
+    }
+    #goals h2{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    #goals ul li{
+        font-size: 18px;
+        line-height: 20px;
+    }   
+}
